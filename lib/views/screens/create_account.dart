@@ -254,13 +254,12 @@ class _CreateAccountState extends State<CreateAccount>
                             if (_fkey.currentState.validate()) {
                               ScaffoldMessenger.of(context)
                                   .showSnackBar(SnackBar(
-                                content: Text(
-                                  "Creating Account...",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                                backgroundColor: Colors.black
-                              ));
-                              creatStudent();
+                                      content: Text(
+                                        "Creating Account...",
+                                        style: TextStyle(color: Colors.white),
+                                      ),
+                                      backgroundColor: Colors.black));
+                              // creatStudent();
                             }
                           },
                           child: Container(
@@ -271,12 +270,13 @@ class _CreateAccountState extends State<CreateAccount>
                               color: Colors.blue[900],
                               shape: BoxShape.circle,
                             ),
-                            child: Text(
-                              'CREATE',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.w600,
-                              ),
+                            child: TextButton.icon(
+                              icon: Icon(Icons.login),
+                              label: Text("Login"),
+                              onPressed: () => {
+                                Navigator.pushNamed(
+                                    context, "/studentDashboard")
+                              },
                             ),
                           ),
                         ),

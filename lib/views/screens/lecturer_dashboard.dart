@@ -25,9 +25,9 @@ class _LecturerDashboardState extends State<LecturerDashboard>
 
     _animation = Tween<double>(begin: 0, end: 1)
         .animate(CurvedAnimation(parent: _controller, curve: Curves.easeOut))
-          ..addListener(() {
-            setState(() {});
-          });
+      ..addListener(() {
+        setState(() {});
+      });
 
     _animation2 = Tween<double>(begin: -30, end: 0)
         .animate(CurvedAnimation(parent: _controller, curve: Curves.easeOut));

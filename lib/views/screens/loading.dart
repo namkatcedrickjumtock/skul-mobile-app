@@ -1,6 +1,4 @@
-
 import 'dart:async';
-import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:hibmat/views/screens/sign_in.dart';
 
@@ -29,7 +27,6 @@ class _LoadingState extends State<Loading> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
   }
 
@@ -51,7 +48,7 @@ class _LoadingState extends State<Loading> {
           ),
           Center(
             child: Text(
-              'HIBMAT MOBILE',
+              'skulMobile',
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 fontSize: 30,
