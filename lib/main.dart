@@ -1,4 +1,3 @@
-import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:hibmat/views/screens/about_hibmat.dart';
 import 'package:hibmat/views/screens/announcements.dart';
